@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		396974A82001CED900429690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396974A72001CED900429690 /* AppDelegate.swift */; };
-		396974AA2001CED900429690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396974A92001CED900429690 /* ViewController.swift */; };
-		396974AD2001CED900429690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396974AB2001CED900429690 /* Main.storyboard */; };
+		396974AA2001CED900429690 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396974A92001CED900429690 /* FirstViewController.swift */; };
 		396974AF2001CED900429690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396974AE2001CED900429690 /* Assets.xcassets */; };
 		396974B22001CED900429690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396974B02001CED900429690 /* LaunchScreen.storyboard */; };
+		7D2921B1F61CE43A139E46DE /* Pods_ExpandableTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD1F1B9649C71C58B1444A2 /* Pods_ExpandableTableViewCell.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16AF4EBA485ED9E7531CCBC1 /* Pods-ExpandableTableViewCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableTableViewCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell.debug.xcconfig"; sourceTree = "<group>"; };
 		396974A42001CED900429690 /* ExpandableTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396974A72001CED900429690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		396974A92001CED900429690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		396974AC2001CED900429690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		396974A92001CED900429690 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		396974AE2001CED900429690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		396974B12001CED900429690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		396974B32001CED900429690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD1F1B9649C71C58B1444A2 /* Pods_ExpandableTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34C8DA5CE9129E8CBF2FF26 /* Pods-ExpandableTableViewCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableTableViewCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2921B1F61CE43A139E46DE /* Pods_ExpandableTableViewCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1013313B9AC689BF22AAF9BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16AF4EBA485ED9E7531CCBC1 /* Pods-ExpandableTableViewCell.debug.xcconfig */,
+				F34C8DA5CE9129E8CBF2FF26 /* Pods-ExpandableTableViewCell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3969749B2001CED900429690 = {
 			isa = PBXGroup;
 			children = (
 				396974A62001CED900429690 /* ExpandableTableViewCell */,
 				396974A52001CED900429690 /* Products */,
+				1013313B9AC689BF22AAF9BC /* Pods */,
+				9EEC6A2E9086B33AAC36396A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +69,20 @@
 			isa = PBXGroup;
 			children = (
 				396974A72001CED900429690 /* AppDelegate.swift */,
-				396974A92001CED900429690 /* ViewController.swift */,
-				396974AB2001CED900429690 /* Main.storyboard */,
+				396974A92001CED900429690 /* FirstViewController.swift */,
 				396974AE2001CED900429690 /* Assets.xcassets */,
 				396974B02001CED900429690 /* LaunchScreen.storyboard */,
 				396974B32001CED900429690 /* Info.plist */,
 			);
 			path = ExpandableTableViewCell;
+			sourceTree = "<group>";
+		};
+		9EEC6A2E9086B33AAC36396A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD1F1B9649C71C58B1444A2 /* Pods_ExpandableTableViewCell.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 396974B62001CED900429690 /* Build configuration list for PBXNativeTarget "ExpandableTableViewCell" */;
 			buildPhases = (
+				2EB93EDED5DC2370AD536E67 /* [CP] Check Pods Manifest.lock */,
 				396974A02001CED900429690 /* Sources */,
 				396974A12001CED900429690 /* Frameworks */,
 				396974A22001CED900429690 /* Resources */,
+				1277DBF88BC97A0C986A2FB6 /* [CP] Embed Pods Frameworks */,
+				D8BC827E9F14F3064AA7E052 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +149,71 @@
 			files = (
 				396974B22001CED900429690 /* LaunchScreen.storyboard in Resources */,
 				396974AF2001CED900429690 /* Assets.xcassets in Resources */,
-				396974AD2001CED900429690 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1277DBF88BC97A0C986A2FB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB93EDED5DC2370AD536E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpandableTableViewCell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8BC827E9F14F3064AA7E052 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		396974A02001CED900429690 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396974AA2001CED900429690 /* ViewController.swift in Sources */,
+				396974AA2001CED900429690 /* FirstViewController.swift in Sources */,
 				396974A82001CED900429690 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		396974AB2001CED900429690 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				396974AC2001CED900429690 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		396974B02001CED900429690 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +341,7 @@
 		};
 		396974B72001CED900429690 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AF4EBA485ED9E7531CCBC1 /* Pods-ExpandableTableViewCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +357,7 @@
 		};
 		396974B82001CED900429690 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F34C8DA5CE9129E8CBF2FF26 /* Pods-ExpandableTableViewCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
