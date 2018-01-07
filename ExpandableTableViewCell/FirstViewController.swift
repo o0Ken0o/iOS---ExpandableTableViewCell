@@ -12,12 +12,14 @@ import SnapKit
 class FirstViewController: UIViewController {
     
     private var tableView: UITableView!
+    private var newsList = [News]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Expandable Cells"
         
+        initNews()
         initVariables()
         setupVariables()
     }
@@ -57,13 +59,16 @@ extension FirstViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return newsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExpandableCell.identifier, for: indexPath) as? ExpandableCell else {
             return UITableViewCell()
         }
+        
+        let news = newsList[indexPath.row]
+        cell.configureCell(with: news)
         
         return cell
     }
@@ -72,6 +77,27 @@ extension FirstViewController: UITableViewDataSource {
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+// MARK: - For News
+extension FirstViewController {
+    private func initNews() {
+        let news1 = News(isExpanded: false, title: "News1", summary: "This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News. End")
+        
+        let news2 = News(isExpanded: false, title: "News1", summary: "This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News. End")
+        
+        let news3 = News(isExpanded: false, title: "News1", summary: "This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News. End")
+        
+        let news4 = News(isExpanded: false, title: "News1", summary: "This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News. End")
+        
+        let news5 = News(isExpanded: false, title: "News1", summary: "This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News.This is News. End")
+        
+        newsList.append(news1)
+        newsList.append(news2)
+        newsList.append(news3)
+        newsList.append(news4)
+        newsList.append(news5)
     }
 }
 

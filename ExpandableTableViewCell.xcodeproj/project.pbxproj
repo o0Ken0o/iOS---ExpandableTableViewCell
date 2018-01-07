@@ -12,6 +12,7 @@
 		396974AF2001CED900429690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396974AE2001CED900429690 /* Assets.xcassets */; };
 		396974B22001CED900429690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396974B02001CED900429690 /* LaunchScreen.storyboard */; };
 		39A99FF22001D5D600DEC531 /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A99FF12001D5D600DEC531 /* ExpandableCell.swift */; };
+		39A99FF42001DE8700DEC531 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A99FF32001DE8700DEC531 /* News.swift */; };
 		7D2921B1F61CE43A139E46DE /* Pods_ExpandableTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD1F1B9649C71C58B1444A2 /* Pods_ExpandableTableViewCell.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		396974B12001CED900429690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		396974B32001CED900429690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39A99FF12001D5D600DEC531 /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		39A99FF32001DE8700DEC531 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		3CD1F1B9649C71C58B1444A2 /* Pods_ExpandableTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34C8DA5CE9129E8CBF2FF26 /* Pods-ExpandableTableViewCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableTableViewCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableTableViewCell/Pods-ExpandableTableViewCell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				396974B02001CED900429690 /* LaunchScreen.storyboard */,
 				396974B32001CED900429690 /* Info.plist */,
 				39A99FF12001D5D600DEC531 /* ExpandableCell.swift */,
+				39A99FF32001DE8700DEC531 /* News.swift */,
 			);
 			path = ExpandableTableViewCell;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				396974AA2001CED900429690 /* FirstViewController.swift in Sources */,
 				396974A82001CED900429690 /* AppDelegate.swift in Sources */,
+				39A99FF42001DE8700DEC531 /* News.swift in Sources */,
 				39A99FF22001D5D600DEC531 /* ExpandableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
