@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 protocol ExpandableCellDelegate: class {
-    func didTapExpandCollapseBtn(cell: ExpandableCell)
+    func didTapExpandCollapseBtn(cell: ExpandableCell, heightDelta: CGFloat)
 }
 
 class ExpandableCell: UITableViewCell {
@@ -114,6 +114,10 @@ class ExpandableCell: UITableViewCell {
     }
     
     @objc private func expandCollapseButtonTapped(sender: UIButton) {
-        delegate?.didTapExpandCollapseBtn(cell: self)
+        let currentWidth = summaryLabel.frame.width
+        let maxHeight = CGFloat.infinity
+        let rect = CGSize(width: currentWidth, height: maxHeight)
+        let newRect = summaryLabel.sizeThatFits(rect)
+        delegate?.didTapExpandCollapseBtn(cell: self, heightDelta: newRect.height - summaryLabel.frame.height)
     }
 }
