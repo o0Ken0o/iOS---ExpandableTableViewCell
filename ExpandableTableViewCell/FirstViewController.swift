@@ -69,6 +69,7 @@ extension FirstViewController: UITableViewDataSource {
         
         let news = newsList[indexPath.row]
         cell.configureCell(with: news)
+        cell.delegate = self
         
         return cell
     }
@@ -76,7 +77,21 @@ extension FirstViewController: UITableViewDataSource {
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if newsList[indexPath.row].isExpanded {
+            return 250
+        }
+        
         return 150
+    }
+}
+
+extension FirstViewController: ExpandableCellDelegate {
+    func didTapExpandCollapseBtn(cell: ExpandableCell) {
+        if let indexPath = tableView.indexPath(for: cell) {
+            newsList[indexPath.row].isExpanded = !newsList[indexPath.row].isExpanded
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
     }
 }
 
